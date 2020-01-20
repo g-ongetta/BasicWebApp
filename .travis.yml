@@ -2,3 +2,10 @@ language: java
 jdk:
 - openjdk8
 script: mvn clean verify
+deploy:
+  provider: heroku
+  api_key:
+    secure: SrdnpEH2m73W0FyCk568oAEv3+FXijXu2UQcYRnaw7o20EcFbUj3DJYQpZ6L9dES5483fs3Q3rHPLLQFzfBR9IsxMYnBFsNFbalJSapyttmFl2oXiW7LJ29eEroKeta9rYtVr2M6Xi0OddwE0Bw/Ue/iHLIRCGzO+n3G0UE1yav5gTaW7Nch6JMZEz8aL/ZQMj1G51P6HJClN8JfA4rwVsF063Q0f+Q11KeuOYnCCkBCG5RVhpNdyCFW6t+o/50HCTZzv7eIUw8N7MCKhHk9E+WBL0cgWZPbXOyZs0ME8hSWWFd4/0fr6GWx5bYzf0FFYUGZnQFOab0H6zIDVKIiF5oyCMMQ62XNsZYf0g3whtBo+lEY2SHCNcaknTLyu1hhIdhFtwLy9yyYPyK3RhVNA+0gF445NifGdH6sizIhpTZhSSi6Zid8X4n/iPBT+TOwoGh3GGMPJdEeTd+7cIdo8IU5aOBLeCqfaUwr63C1WCUdPvW2RbtY52KrHtJFp8zSl6hSKzIb0FzJtzlnyiUGiKq+NvIGf8nZ2whyCQPVaA7z/fNcWffZwXKfpvtXIW9LfTnetw0ujstg2G0LXH/fM2Hoa8m4RBFi+3aDWo1RvhNj8Ksvr9pt3FEsY+M4Fug+QV4oTUq3oxTmmQW7aVxoFA1ofb5f22FTsYm9tlmJic8=
+  app: george-basic
+  on:
+    repo: g-ongetta/BasicWebApp
